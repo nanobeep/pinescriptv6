@@ -1,4 +1,5 @@
 # Constants
+---
 
 ## adjustment.dividends
 
@@ -1690,3 +1691,4 @@ A named constant that specifies the algorithm of interpretation of y-value in fu
 A named constant that specifies the algorithm of interpretation of y-value in function label.new.
 
 ---
+

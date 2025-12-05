@@ -1,5 +1,3 @@
-# Functions - Technical Analysis All ta.* functions (RSI, SMA, etc.)
-
 ## ta.alma()
 
 Arnaud Legoux Moving Average. It uses Gaussian distribution as weights for moving average.
@@ -1222,3 +1220,6 @@ na values in the source series are ignored.
 indicator("Williams %R", shorttitle="%R", format=format.price, precision=2)
 plot(ta.wpr(14), title="%R", color=color.new(#ff6d00, 0))
 ```
+
+---
+

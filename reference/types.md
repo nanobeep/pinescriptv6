@@ -402,3 +402,4 @@ if barstate.islastconfirmedhistory
 
 ### Remarks
 Table objects are always of "series" form.
+

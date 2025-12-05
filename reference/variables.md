@@ -1,4 +1,3 @@
-
 # Variables 
 
 ---
@@ -2270,3 +2269,4 @@ Current bar year in exchange timezone.
 
 ### Remarks
 Note that this variable returns the year based on the time of the bar's open. For overnight sessions (e.g. EURUSD, where Monday session starts on Sunday, 17:00) this value can be lower by 1 than the year of the trading day.
+
