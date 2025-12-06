@@ -67,8 +67,8 @@
   * **Keywords:** `strategy.entry`, `strategy.close`, `strategy.exit`, `strategy.position_size`, `strategy.equity`, `strategy.risk`.
 
 * **`reference/functions/request.md` (External Data)**
-  * **Content:** Requesting data from other symbols, financial data, or seeds.
-  * **Keywords:** `request.security`, `request.financial`, `request.seed`, `request.currency_rate`.
+  * **Content:** Requesting data from other symbols and financial data. `request.seed()` has been discontinued.
+  * **Keywords:** `request.security`, `request.financial`, `request.currency_rate`.
 
 * **`reference/functions/drawing.md` (Visuals)**
   * **Content:** Plotting data on the chart and drawing geometric shapes.

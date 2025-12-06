@@ -8962,21 +8962,10 @@ if bar_index == last_bar_index - 1
 
 ## request.seed()
 
-Requests data from a user-maintained GitHub repository and returns it as a series. An in-depth tutorial on how to add new data can be found here.
+This function has been discontinued and is no longer available. Calls to `request.seed()` now raise a runtime error, so migrate scripts to other data sources.
 
 ### Returns
-Requested series or tuple of series, which may include array/matrix IDs.
-
-### Code Example
-```pine
-//@version=6
-indicator("BTC Development Activity")
-
-[devAct, devActSMA] = request.seed("seed_crypto_santiment", "BTC_DEV_ACTIVITY", [close, ta.sma(close, 10)])
-
-plot(devAct, "BTC Development Activity")
-plot(devActSMA, "BTC Development Activity SMA10", color = color.yellow)
-```
+n/a. Calls now fail because the function is discontinued.
 
 ---
 

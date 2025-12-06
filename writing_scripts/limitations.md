@@ -229,7 +229,8 @@ A script can use up to 40  _unique_  calls to the functions in the  `request.*()
 -   [request.quandl()](https://www.tradingview.com/pine-script-reference/v6/#fun_request.quandl)
 -   [request.financial()](https://www.tradingview.com/pine-script-reference/v6/#fun_request.financial)
 -   [request.economic()](https://www.tradingview.com/pine-script-reference/v6/#fun_request.economic)
--   [request.seed()](https://www.tradingview.com/pine-script-reference/v6/#fun_request.seed)
+
+> Note: The `request.seed()` function has been discontinued and is no longer available. Calls to it will fail.
 
 When a script executes two or more identical  `request.*()`  function calls, only the  _first_  call usually counts toward this limit. The repeated calls do not count because they  _reuse_  the data from the first call rather than executing a redundant request. Note that when a script imports  [library](https://www.tradingview.com/pine-script-docs/concepts/libraries/)  functions containing  `request.*()`  calls within their scopes, those calls  **do**  count toward this limit, even if the script already calls the same  `request.*()`  function with the same arguments in its main scope.
 
