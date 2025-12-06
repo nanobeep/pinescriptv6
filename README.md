@@ -18,7 +18,7 @@ If you use AI-native editors like Cursor or Windsurf:
 2. In your chat interface, reference specific documentation based on what you are building.
    * *Building an indicator?* Reference `[@functions/ta.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/ta.md)` and `[@functions/drawing.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/drawing.md)`.
    * *Building a strategy?* Reference `[@functions/strategy.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/strategy.md)`.
-   * *Getting errors?* Reference `@concepts/common_errors.md`.
+   * *Need a quick map?* Start with `LLM_MANIFEST.md` and follow the referenced files.
 
 ### Option 2: Claude Projects / Custom GPTs
 1. Download this repository as a ZIP.
@@ -44,7 +44,8 @@ If you use AI-native editors like Cursor or Windsurf:
 ## 📂 Repository Structure
 
 * **`[LLM_MANIFEST.md](https://github.com/codenamedevan/pinescriptv6/blob/main/LLM_MANIFEST.md)`**: The master index. Start here.
-* **`[concepts/](https://github.com/codenamedevan/pinescriptv6/tree/main/concepts)`**: Explanations of how the Pine engine works (Execution model, Timeframes).
+* **`pinescriptv6reference.md`**: The single source document from TradingView.
+* **`rebuild_reference_docs.py`**: Splits the source document into the chunked references below.
 * **`[reference/](https://github.com/codenamedevan/pinescriptv6/tree/main/reference)`**: The strict API dictionary.
     * `[variables.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/variables.md)`: Built-ins (`open`, `close`, `syminfo`).
     * `[constants.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/constants.md)`: Fixed values (`color.red`).
