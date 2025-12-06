@@ -6,7 +6,27 @@
 2.  Locate the relevant file path below.
 3.  Retrieve ONLY that file to conserve context window.
 
-## 1. API Reference (The Dictionary)
+## 1. Syntax and Core Concepts
+
+*Use these files when the user asks about language mechanics, execution flow, or type errors.*
+
+* **`concepts/execution_model.md`**
+  * **Content:** How the script executes bar-by-bar, historical vs. real-time context, and the `var` keyword.
+  * **Keywords:** `barstate`, `history`, `realtime`, `calc_on_every_tick`, `var`, `varip`.
+
+* **`concepts/timeframes.md`**
+  * **Content:** Handling multi-timeframe data and preventing repainting.
+  * **Keywords:** `request.security`, `timeframe.period`, `repainting`, `HTF`.
+
+* **`concepts/colors_and_display.md`**
+  * **Content:** Defining colors, gradients, and transparency.
+  * **Keywords:** `color.new`, `color.from_gradient`, `bgcolor`.
+
+* **`concepts/common_errors.md`**
+  * **Content:** Explanations for common runtime and compile-time errors.
+  * **Keywords:** "Series string", "Undeclared identifier", "max_bars_back".
+
+## 2. API Reference (The Dictionary)
 
 *Use these files for looking up built-in variables, constants, and keywords.*
 
@@ -26,7 +46,7 @@
   * **Content:** Language keywords and control structures.
   * **Keywords:** `if`, `else`, `switch`, `for`, `while`, `export`, `import`, `method`.
 
-## 2. Function Reference (By Namespace)
+## 3. Function Reference (By Namespace)
 
 *Use these files to find syntax for specific function calls.*
 
@@ -69,4 +89,4 @@
   * retrieve `reference/functions/ta.md` (for `ta.highest`, `ta.lowest`)
 
 * **IF** user asks "Why is my variable resetting every bar?":
-  * retrieve `reference/keywords.md` (check `var` usage) and `reference/types.md` (series/simple qualifiers)
+  * retrieve `concepts/execution_model.md` (check `var` usage)
