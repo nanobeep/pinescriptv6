@@ -26,6 +26,14 @@
   * **Content:** Explanations for common runtime and compile-time errors.
   * **Keywords:** "Series string", "Undeclared identifier", "max_bars_back".
 
+* **`concepts/objects.md`**
+  * **Content:** Overview of objects (lines, labels, boxes) and their lifecycle.
+  * **Keywords:** `line`, `label`, `box`, `object`, `delete`, `na`.
+
+* **`concepts/methods.md`**
+  * **Content:** Methods syntax and usage patterns.
+  * **Keywords:** `.set_*`, `.copy()`, method chaining.
+
 ## 2. API Reference (The Dictionary)
 
 *Use these files for looking up built-in variables, constants, and keywords.*
@@ -73,6 +81,33 @@
 * **`reference/functions/general.md` (Math, Strings, Inputs)**
   * **Content:** Core math, string manipulation, and user inputs.
   * **Keywords:** `math.abs`, `math.round`, `str.tostring`, `str.format`, `input.int`, `input.bool`, `alert()`.
+
+## 3. Visuals & Display
+
+*Use these when the user asks about plots, colors, shapes, fills, or layout.*
+
+* **`visuals/overview.md`** — Entry point for visuals.
+* **`visuals/plots.md`** — Plotting primitives.
+* **`visuals/colors.md`** — Color handling and palettes.
+* **`visuals/fills.md`** — Filling areas and backgrounds.
+* **`visuals/lines_and_boxes.md`** — Line/box drawing basics.
+* **`visuals/bar_coloring.md`**, **`visuals/bar_plotting.md`**, **`visuals/backgrounds.md`**, **`visuals/levels.md`**, **`visuals/tables.md`**, **`visuals/texts_and_shapes.md`** — Specific display topics.
+
+## 4. Writing & Debugging
+
+*Use these for style, debugging, profiling, publishing, and limits.*
+
+* **`writing_scripts/style_guide.md`**
+* **`writing_scripts/debugging.md`**
+* **`writing_scripts/profiling_and_optimization.md`**
+* **`writing_scripts/publishing_scripts.md`**
+* **`writing_scripts/limitations.md`**
+
+## 5. Release Notes
+
+*Use when the question is about recent changes.*
+
+* **`release_notes.md`**
 
 ## 🧭 Routing Logic for LLMs
 

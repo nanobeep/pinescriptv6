@@ -3,10 +3,19 @@ import re
 
 def main():
     """
-    Parses 'pinescriptv6reference.md' and distributes documentation
+    Parses the Pine Script reference source and distributes documentation
     into categorized markdown files in 'reference/'.
     """
-    source_file = "pinescriptv6reference.md"
+    source_candidates = [
+        "pinescriptv6_complete_reference.md",
+        "pinescriptv6reference.md",
+    ]
+    source_file = next((p for p in source_candidates if os.path.exists(p)), None)
+
+    if not source_file:
+        print("Error: No source reference file found. Expected one of:", source_candidates)
+        return
+
     base_output_dir = "reference"
     functions_output_dir = os.path.join(base_output_dir, "functions")
     

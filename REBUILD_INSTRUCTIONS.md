@@ -1,16 +1,17 @@
 # Reference Documentation Rebuilder
 
-This tool automates the process of "chunking" the massive `pinescriptv6reference.md` file into smaller, categorized markdown files located in `reference/functions/`. This structure is optimized for RAG (Retrieval Augmented Generation) and LLM context windows.
+This tool automates the process of "chunking" the massive Pine Script reference file into smaller, categorized markdown files located in `reference/`. This structure is optimized for RAG (Retrieval Augmented Generation) and LLM context windows.
 
 ## Files
 
 *   **Script:** `rebuild_reference_docs.py`
-*   **Source:** `pinescriptv6reference.md` (Must exist in the project root)
-*   **Target:** `reference/functions/*.md`
+*   **Source (preferred):** `pinescriptv6_complete_reference.md` in the project root  
+    **Fallback:** `pinescriptv6reference.md` (legacy name)
+*   **Target:** `reference/*.md` and `reference/functions/*.md`
 
 ## Logic
 
-The script parses `pinescriptv6reference.md` and splits it into categorized markdown files based on top-level sections (`# Section`) and function namespaces.
+The script parses the reference source file and splits it into categorized markdown files based on top-level sections (`# Section`) and function namespaces.
 
 ### Standard Sections
 These sections are mapped 1-to-1 from the source file to a target file in `reference/`:
@@ -37,7 +38,7 @@ The `# Functions` section is further processed and distributed into `reference/f
 ## Usage
 
 1.  Ensure you are in the root directory of the repository.
-2.  Ensure `pinescriptv6reference.md` is present.
+2.  Ensure `pinescriptv6_complete_reference.md` (or the legacy `pinescriptv6reference.md`) is present.
 3.  Run the script using Python 3:
 
 ```bash

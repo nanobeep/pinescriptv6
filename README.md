@@ -1,7 +1,7 @@
 # Pine Script v6 Reference for LLMs
 
 **Current Version:** v6  
-**Source:** [TradingView Pine Script™ v6 Reference Manual](https://www.tradingview.com/pine-script-reference/v6/)
+**Source:** [TradingView Pine Script™ v6 Reference Manual](https://www.tradingview.com/pine-script-reference/v6/) & [Welcome to Pine Script® v6](https://www.tradingview.com/pine-script-docs/welcome/)
 
 ## 🤖 What is this?
 This repository contains the official Pine Script v6 documentation, restructured and "chunked" specifically for Large Language Models (LLMs).
@@ -19,6 +19,8 @@ If you use AI-native editors like Cursor or Windsurf:
    * *Building an indicator?* Reference `[@functions/ta.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/ta.md)` and `[@functions/drawing.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/drawing.md)`.
    * *Building a strategy?* Reference `[@functions/strategy.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/strategy.md)`.
    * *Getting errors?* Reference `@concepts/common_errors.md`.
+   * *Visual styling?* Reference `@visuals/overview.md` plus the relevant sub-page (e.g., `visuals/plots.md`, `visuals/colors.md`).
+   * *Writing guidance?* Reference `@writing_scripts/style_guide.md`.
 
 ### Option 2: Claude Projects / Custom GPTs
 1. Download this repository as a ZIP.
@@ -44,8 +46,9 @@ If you use AI-native editors like Cursor or Windsurf:
 ## 📂 Repository Structure
 
 * **`[LLM_MANIFEST.md](https://github.com/codenamedevan/pinescriptv6/blob/main/LLM_MANIFEST.md)`**: The master index. Start here.
-* **`[concepts/](https://github.com/codenamedevan/pinescriptv6/tree/main/concepts)`**: Explanations of how the Pine engine works (Execution model, Timeframes).
-* **`[reference/](https://github.com/codenamedevan/pinescriptv6/tree/main/reference)`**: The strict API dictionary.
+* **`pinescriptv6_complete_reference.md`**: Canonical raw reference source file (parsed by the rebuild script). If absent, the rebuild script falls back to `pinescriptv6reference.md`.
+* **`rebuild_reference_docs.py`**: Splits the source reference into the chunked files below.
+* **`[reference/](https://github.com/codenamedevan/pinescriptv6/tree/main/reference)`**: The strict API dictionary generated from the source file.
     * `[variables.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/variables.md)`: Built-ins (`open`, `close`, `syminfo`).
     * `[constants.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/constants.md)`: Fixed values (`color.red`).
     * `[functions/](https://github.com/codenamedevan/pinescriptv6/tree/main/reference/functions)`:
@@ -53,6 +56,10 @@ If you use AI-native editors like Cursor or Windsurf:
         * `[strategy.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/strategy.md)`: Backtesting.
         * `[request.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/request.md)`: External data.
         * `[drawing.md](https://github.com/codenamedevan/pinescriptv6/blob/main/reference/functions/drawing.md)`: Visuals (`plot`, `line`, `box`).
+* **`[concepts/](https://github.com/codenamedevan/pinescriptv6/tree/main/concepts)`**: Core mechanics (execution model, timeframes, colors, objects/methods, common errors).
+* **`[visuals/](https://github.com/codenamedevan/pinescriptv6/tree/main/visuals)`**: Display primitives (plots, colors, fills, lines/boxes, tables, text/shapes).
+* **`[writing_scripts/](https://github.com/codenamedevan/pinescriptv6/tree/main/writing_scripts)`**: Style guide, debugging, profiling/optimization, publishing, limitations.
+* **`release_notes.md`**: Release notes snapshots.
 
 ---
 
