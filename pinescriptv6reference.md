@@ -8962,7 +8962,7 @@ if bar_index == last_bar_index - 1
 
 ## request.seed()
 
-Requests data from a user-maintained GitHub repository and returns it as a series. An in-depth tutorial on how to add new data can be found here.
+Note: This function has been deprecated and no longer works.
 
 ### Returns
 Requested series or tuple of series, which may include array/matrix IDs.
